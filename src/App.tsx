@@ -1,3 +1,4 @@
+import ButtonTop from "./components/buttonTop";
 import Footer from "./components/footer";
 import MyLinks from "./components/myLinks";
 import Navbar from "./components/navbar";
@@ -32,6 +33,7 @@ const App = () => {
         theme="light"
         transition={Bounce}
       />
+      <ButtonTop />
     </div>
   );
 };
