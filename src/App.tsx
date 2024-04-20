@@ -1,8 +1,12 @@
+import Footer from "./components/footer";
 import MyLinks from "./components/myLinks";
 import Navbar from "./components/navbar";
 import About from "./pages/about";
+import Contact from "./pages/contact";
 import Home from "./pages/home";
 import Portfolio from "./pages/portfolio";
+import { Bounce, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -12,6 +16,22 @@ const App = () => {
       <Home />
       <About />
       <Portfolio />
+      <Contact />
+      <Footer />
+      <ToastContainer
+        position="top-center"
+        autoClose={4000}
+        limit={2}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
     </div>
   );
 };

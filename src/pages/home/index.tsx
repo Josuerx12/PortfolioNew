@@ -1,4 +1,7 @@
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
+import { handleScrollTo } from "../../hooks/useScroll";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Home = () => {
   return (
@@ -25,18 +28,54 @@ const Home = () => {
           <div className="text-neutral-300">
             <p className="flex items-center text-lg gap-2 ">
               Look more about my jobs <FaArrowRight className="animate-pulse" />{" "}
-              <button className="px-2 text-white font-semibold py-1 rounded-md bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all bg-gradient-to-r from-blue-600 via-sky-400 to-blue-600 text-base  duration-500">
+              <button
+                onClick={() => handleScrollTo("portfolio")}
+                className="px-2 text-white font-semibold py-1 rounded-md bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all bg-gradient-to-r from-blue-600 via-sky-400 to-blue-600 text-base  duration-500"
+              >
                 Portfolio
               </button>
             </p>
           </div>
         </div>
+        <div className="flex flex-col">
+          <img
+            src="/profile03.png"
+            className="rounded-2xl md:w-64 w-2/3 mx-auto bg-size-200 bg-pos-0 hover:bg-pos-100 bg-gradient-to-r from-blue-600  via-sky-400 to-blue-600 pt-4  hover:scale-110 shadow-lg duration-500 cursor-pointer"
+            alt=""
+          />
 
-        <img
-          src="/profile03.png"
-          className="rounded-2xl md:w-64 w-2/3 mx-auto bg-size-200 bg-pos-0 hover:bg-pos-100 bg-gradient-to-r from-blue-600  via-sky-400 to-blue-600 pt-4  hover:scale-110 shadow-lg duration-500 cursor-pointer"
-          alt=""
-        />
+          <div className="flex justify-center gap-4 mt-4 lg:hidden">
+            <a
+              href="https://github.com/Josuerx12"
+              target="_blank"
+              className="text-white flex bg-gray-500 hover:bg-gray-700 duration-300 p-1 rounded  items-center"
+            >
+              <FaGithub size={30} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/josueaze12/"
+              target="_blank"
+              className=" text-white bg-gray-500 hover:bg-gray-700 duration-300 rounded p-1 flex  items-center"
+            >
+              <FaLinkedin size={30} />
+            </a>
+            <a
+              href="mailto:josueazevedo71@hotmail.com"
+              target="_blank"
+              className="text-white bg-gray-500 hover:bg-gray-700 duration-300 flex p-1 rounded  items-center"
+            >
+              <HiOutlineMail size={30} />
+            </a>
+            <a
+              href="./resume.pdf"
+              download={true}
+              target="_blank"
+              className="text-white bg-gray-500 hover:bg-gray-700 duration-300 p-1 flex rounded  items-center"
+            >
+              <BsFillPersonLinesFill size={30} />
+            </a>
+          </div>
+        </div>
       </div>
     </main>
   );

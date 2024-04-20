@@ -1,14 +1,9 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { handleScrollTo } from "../../hooks/useScroll";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  function handleScrollTo(path: string) {
-    setMobileOpen(false);
-    const element = document.getElementById(path);
-    element?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
 
   const list = ["home", "about", "portfolio", "contact"];
 
@@ -27,7 +22,10 @@ const Navbar = () => {
             <li
               className="tracking-wider capitalize cursor-pointer text-lg text-gray-400 hover:scale-110 hover:text-white duration-200 ease-linear before:duration-200 hover:before:w-full before:w-0 before:absolute relative before:h-[2px] before:bg-white before:bottom-0"
               key={i}
-              onClick={() => handleScrollTo(value)}
+              onClick={() => {
+                handleScrollTo(value);
+                setMobileOpen(false);
+              }}
             >
               {value}
             </li>
@@ -51,7 +49,10 @@ const Navbar = () => {
           <li
             className="tracking-wider capitalize cursor-pointer text-lg text-gray-400 hover:scale-110 hover:text-white duration-200 ease-linear"
             key={i}
-            onClick={() => handleScrollTo(value)}
+            onClick={() => {
+              handleScrollTo(value);
+              setMobileOpen(false);
+            }}
           >
             {value}
           </li>
