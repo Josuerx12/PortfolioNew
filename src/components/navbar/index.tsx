@@ -5,7 +5,7 @@ import { handleScrollTo } from "../../hooks/useScroll";
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const list = ["home", "about", "portfolio", "contact"];
+  const list = ["home", "about", "portfolio", "contact", "experience"];
 
   return (
     <>

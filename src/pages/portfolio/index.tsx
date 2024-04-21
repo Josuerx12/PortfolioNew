@@ -14,7 +14,7 @@ const Portfolio = () => {
           </h5>
         </div>
 
-        <div className="w-full gap-4 justify-between flex flex-wrap">
+        <div className="w-full gap-10 justify-between flex flex-wrap">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.id} />
           ))}

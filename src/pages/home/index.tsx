@@ -23,16 +23,16 @@ const Home = () => {
             <p>
               I work with React.js, Node.js, NoSql databases, Sql databases!
             </p>
-            <p>Actually working at FST Tecnología from Campos-RJ</p>
+            <p>Actually working at FST Tecnologia from Campos-RJ</p>
           </div>
           <div className="text-neutral-300">
             <p className="flex items-center text-lg gap-2 ">
-              Look more about my jobs <FaArrowRight className="animate-pulse" />{" "}
               <button
                 onClick={() => handleScrollTo("portfolio")}
-                className="px-2 text-white font-semibold py-1 rounded-md bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all bg-gradient-to-r from-blue-600 via-sky-400 to-blue-600 text-base  duration-500"
+                className="p-2 group text-white flex items-center gap-3 justify-center font-semibold rounded-md bg-size-200 bg-pos-0 hover:bg-pos-100 transition-all bg-gradient-to-r from-blue-600 via-sky-400 to-blue-600 text-base  duration-500"
               >
-                Portfolio
+                Portfolio{" "}
+                <FaArrowRight className="group-hover:rotate-90 duration-300" />
               </button>
             </p>
           </div>

@@ -22,7 +22,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
-    <div className="md:max-w-72 w-full relative flex flex-col justify-between bg-gray-700  rounded-lg ">
+    <div className="md:max-w-72 w-full relative flex flex-col justify-between shadow-md shadow-neutral-500 rounded-lg ">
       <h3 className="font-bold text-2xl mx-auto py-2">{project.name}</h3>
       <div className="w-11/12 md:hover:scale-[1.15] duration-500 cursor-pointer md:h-56 h-full mx-auto py-5">
         <Slider
