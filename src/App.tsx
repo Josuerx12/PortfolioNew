@@ -4,6 +4,7 @@ import MyLinks from "./components/myLinks";
 import Navbar from "./components/navbar";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Experience from "./pages/experience";
 import Home from "./pages/home";
 import Portfolio from "./pages/portfolio";
 import { Bounce, ToastContainer } from "react-toastify";
@@ -17,6 +18,7 @@ const App = () => {
       <Home />
       <About />
       <Portfolio />
+      <Experience />
       <Contact />
       <Footer />
       <ToastContainer

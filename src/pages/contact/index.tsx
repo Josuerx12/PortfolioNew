@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-full h-full  min-h-screen pt-24 pb-4 bg-gradient-to-b from-neutral-900 to-neutral-950 text-white flex justify-center items-center"
+      className="w-full h-full  min-h-screen pt-24 pb-4 bg-gradient-to-b from-neutral-950 to-neutral-900 text-white flex justify-center items-center"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
         <div className="pb-8">
