@@ -27,9 +27,9 @@ const ButtonTop = () => {
   return (
     <button
       onClick={() => handleScrollTo("root")}
-      className="bg-neutral-800 drop-shadow-lg gap-2 hover:shadow-sm duration-200 hover:shadow-neutral-700 rounded text-white capitalize fixed bottom-10 right-10 flex items-center p-2"
+      className="bg-neutral-800 drop-shadow-lg gap-2 hover:shadow-sm duration-200 hover:shadow-neutral-700 rounded-full text-white capitalize fixed bottom-12 right-12 flex items-center p-2"
     >
-      <FaArrowUp />
+      <FaArrowUp size={25} />
     </button>
   );
 };

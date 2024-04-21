@@ -13,11 +13,12 @@ const Experience = () => {
             Experience
           </h5>
 
-          <div className="flex flex-wrap gap-10 mt-10 justify-between">
-            {techs.map((exp) => (
-              <ExperienceCard key={exp.id} exp={exp} />
-            ))}
-          </div>
+          <p className="mt-5"> These are the technologies I've worked with</p>
+        </div>
+        <div className="flex flex-wrap gap-10 mt-5 justify-between">
+          {techs.map((exp) => (
+            <ExperienceCard key={exp.id} exp={exp} />
+          ))}
         </div>
       </div>
     </section>
