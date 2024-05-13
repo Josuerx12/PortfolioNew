@@ -78,14 +78,14 @@ const projects = [
   },
   {
     id: 5,
-    name: "Wheater App",
+    name: "Weather App",
     techs: ["HTML5", "CSS3", "Javascript"],
     imgs: [
       "https://i.imgur.com/OMQQwGZ.png",
       "https://i.imgur.com/DtHLkD8.png",
     ],
-    demo: "https://josuerx12.github.io/WheaterAPP/",
-    code: "https://github.com/Josuerx12/WheaterAPP",
+    demo: "https://josuerx12.github.io/WeatherAPP/",
+    code: "https://github.com/Josuerx12/WeatherAPP",
   },
   {
     id: 6,
